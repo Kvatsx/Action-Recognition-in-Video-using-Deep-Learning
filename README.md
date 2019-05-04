@@ -28,7 +28,7 @@ have 101 classes which are divided into five types:
     - Playing Musical Instruments
     - Sports
 The dataset consists of realistic user-uploaded videos containing
-cluttered background and camera motion. It gives the largest diversity in terms of actions and with the presence of large variations in camera motion, cluttered background, illumination conditions. 
+cluttered background and camera motion. It gives the largest diversity in terms of actions and with the presence of large variations in camera motion, cluttered background, illumination conditions. We created our own UCF10 Dataset, which basically include 2K total videos and 200 videos of each class.
 
 # Approach
 The motivation is to capture both, the spatial feature of the video as well as Temporal ones. For example, To classify either the action being performed by a person in the video is archery or playing basketball, Our spatial network captures the still-frame information about the action being performed. Basically it’s doing classification task on frame of video. Temporal network tries to distinguish the action using motion in the video. For this motion we are using segmentation based optical flow in both, horizontal and vertical directions. Both the models uses ResNet34 as the underlying network.
